@@ -123,7 +123,7 @@ function save(namespaces) {
     // string 'null' or 'undefined'. Just delete instead.
     delete process.env.DEBUG;
   } else {
-    process.env.DEBUG = namespaces;
+    (process.env).DEBUG = namespaces;
   }
 }
 
